@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons/css/boxicons.min.css">
+
+
+        <title>Portfolio website complete</title>
+
+        
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons/css/boxicons.min.css">
+        <style>
+            /* Define the jump animation */
+            @keyframes jump {
+                0% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+    
+            /* Apply styles to the link */
+            .home__social-icon {
+                text-decoration: none;
+                color: #333;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                animation: jump 1s ease-in-out infinite; /* Apply the jump animation continuously */
+            }
+    
+            .home__social-icon i {
+                font-size: 20px;
+                color: #2053dd;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+
+
+
+
+
+
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Dinesh</a>
+                </div>
+        
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+
+                        <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> <!-- New Contact item -->
+                    </ul>
+                </div>
+        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+        
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <br><span class="home__title-color">Dineshwaran Soundararajan</span><br> Software Engineer</h1>
+
+                    <a href="assets/Dineshwaran_Soundararajan_software_engineer_resume-J.pdf" class="button" download="Dineshwaran_S_Resume.pdf">Download Resume</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.google.com/maps/search/Coimbatore,+TN" class="home__social-icon">
+                        <i class='bx bx-map'></i>
+                        Coimbatore - TN
+                    </a>          
+                </div>
+
+
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/Picsart_24-09-16_21-35-34-656.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/dw.jpeg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Dinesh</h2>
+                        <p class="about__text">A highly motivated Full Stack Developer with 1 year of experience, proficient in Node.js and React.js. Passionate about creating scalable and efficient solutions, I am eager to contribute my expertise in developing and maintaining innovative technologies that enhance business processes and improve user experiences.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+         
+
+
+
+
+
+
+
+                   
+        <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+        
+            <div class="education__container bd-grid">
+                <!-- BE in Electronics and Communication Engineering -->
+                <div class="education__item">
+                    <h3 class="education__title">Bachelor of Engineering (BE) - Electronics and Communication Engineering</h3>
+                    <p><strong>Institution:</strong> Nandha College Of Technology  - Erode</p>
+                    <p><strong>Duration:</strong> 2019 - 2023</p>
+                    <p><strong>CGPA:</strong> 7.0</p>
+                </div>
+        
+                <!-- HSC -->
+                <div class="education__item">
+                    <h3 class="education__title">Higher Secondary Certificate (HSC)</h3>
+                    <p><strong>Institution:</strong> Velavan Matriculation Higher Secondary School - Tiruppur</p>
+                    <p><strong>Duration:</strong> 2018 - 2019</p>
+                    <p><strong>Percentage:</strong> 63%</p>
+                </div>
+        
+                <!-- SSLC -->
+                <div class="education__item">
+                    <h3 class="education__title">Secondary School Leaving Certificate (SSLC)</h3>
+                    <p><strong>Institution:</strong> Velavan Matriculation Higher Secondary School - Tiruppur</p>
+                    <p><strong>Duration:</strong> 2016 - 2017</p>
+                    <p><strong>Percentage:</strong> 83%</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+            <section id="skills" class="skills" style="padding: 20px; font-family: Arial, sans-serif; max-width: 90%; margin: 0 auto;">
+                <h1 class="section-title" style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 40px;">
+                    Skills
+                </h1>
+                <div class="skills__content" style="display: flex; justify-content: space-between; gap: 20px;">
+                    <!-- Left Column (Programming Languages & Web Technology) -->
+                    <div class="skills__left" style="flex: 0.45;"> <!-- Adjusted flex value to shrink the side -->
+                        <!-- Programming Languages -->
+                        <h2 class="skills__subtitle" style="font-size: 1.8rem; color: #2053dd; margin-bottom: 15px; border-bottom: 3px solid #2053dd; padding-bottom: 5px;">Programming Languages</h2>
+                        <ul class="skills__list">
+                            <li class="skill-item">
+                                <i class="fas fa-code"></i> C
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-code"></i> Python
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-laptop-code"></i> Java
+                            </li>
+                           
+                        </ul>
+            
+                        <!-- Web Technology -->
+                        <h2 class="skills__subtitle" style="font-size: 1.8rem; color: #2053dd; margin-top: 30px; margin-bottom: 15px; border-bottom: 3px solid #2053dd; padding-bottom: 5px;">Web Technology</h2>
+                        <ul class="skills__list">
+                            <li class="skill-item">
+                                <i class="fas fa-laptop-code"></i> HTML & CSS
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-laptop-code"></i> JavaScript
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-laptop-code"></i> Node.js
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-laptop-code"></i> 
+                                React.js
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <!-- Right Column (Frameworks, Databases, Tools) -->
+                    <div class="skills__right" style="flex: 0.45;"> <!-- Adjusted flex value to shrink the side -->
+                        <!-- Frameworks & Libraries -->
+                        <h2 class="skills__subtitle" style="font-size: 1.8rem; color: #2053dd; margin-bottom: 15px; border-bottom: 3px solid #2053dd; padding-bottom: 5px;">Frameworks & Libraries</h2>
+                        <ul class="skills__list">
+                            <li class="skill-item">
+                                <i class="fas fa-cogs"></i> ReactAPI
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-cogs"></i> Python Flask
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-laptop-code"></i> Express Framework
+                            </li>
+                        </ul>
+            
+                        <!-- Databases -->
+                        <h2 class="skills__subtitle" style="font-size: 1.8rem; color: #2053dd; margin-top: 30px; margin-bottom: 15px; border-bottom: 3px solid #2053dd; padding-bottom: 5px;">Databases</h2>
+                        <ul class="skills__list">
+                            <li class="skill-item">
+                                <i class="fas fa-database"></i> MsSQL
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-database"></i> PostgreSQL
+                            </li>
+                        </ul>
+            
+                        <!-- Tools -->
+                        <h2 class="skills__subtitle" style="font-size: 1.8rem; color: #2053dd; margin-top: 30px; margin-bottom: 15px; border-bottom: 3px solid #2053dd; padding-bottom: 5px;">Tools</h2>
+                        <ul class="skills__list">
+                            <li class="skill-item">
+                                <i class="fas fa-toolbox"></i> Postman
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-toolbox"></i> GitHub
+                            </li>
+                            <li class="skill-item">
+                                <i class="fas fa-toolbox"></i> IBM Sterling Integrator
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+        
+            
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+            <section class="work section" id="work">
+                <h2 class="section-title">Professional Experience</h2>
+
+
+
+                <div style="text-align: center;">
+                    <p><strong>Company:</strong> Avasoft Pvt Ltd, Chennai, India</p>
+                    <p><strong>Duration:</strong> (2023 - 2024)</p>
+                </div>
+
+            
+                <div class="work__container bd-grid">
+                    
+                 
+                    <!-- CloudGen Project -->
+                    <div class="work__experience">
+
+
+
+
+
+                        <h3 class="work__title">Full Stack Developer - CloudGen</h3>
+                        
+                        <p><strong>Technologies:</strong> React.js, Node.js, MsSQL</p>
+                        <ul class="work__details">
+                            <li>Led the development of CloudGen, a web application with drag-and-drop functionalities for AWS service deployment.</li>
+                            <li>Collaborated with cross-functional teams to integrate cloud service requirements into application development.</li>
+                            <li>Utilized Plant UML for creating efficient visual representations of service architecture.</li>
+                            <li>Implemented the 4D process (Define, Design, Development, Deployment) to enhance development efficiency.</li>
+                            <li>Developed backend connectivity using Node.js for seamless AWS integration based on API inputs.</li>
+                            <li>Designed a user-friendly UI with React.js for easy configuration and diagramming of services.</li>
+                        </ul>
+                    </div>
+            
+                    <!-- EDI-Support Project -->
+                    <div class="work__experience">
+                        <h3 class="work__title">EDI Support - ModeGlobal</h3>
+                        <p><strong>Technologies:</strong> IBM Sterling Integrator, BTMS, Tritan, JIRA</p>
+                        <ul class="work__details">
+                            <li>Provided comprehensive customer support for ModeGlobal, addressing EDI communication inquiries and troubleshooting issues.</li>
+                            <li>Managed and tracked support cases using IBM Sterling Integrator, BTMS, and Tritan tools.</li>
+                            <li>Monitored EDI file flows, promptly communicating errors to customers or carriers as necessary.</li>
+                            <li>Developed and implemented EDI communications for new clients, ensuring compliance with industry standards.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+
+
+            
+
+
+     
+        
+
+
+
+            <footer class="footer" >
+                <p id="contact" class="footer__title">Contact</p>
+                <div class="footer__social " >
+                    <!-- Social Media Icons -->
+                    <a href="https://www.linkedin.com/in/dineshwaran-soundararajan-54b345192" class="footer__icon" target="_blank" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="mailto:s.dineshwaran001@gmail.com" class="footer__icon" title="Email">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                    <a href="tel:+918489327343" class="footer__icon" title="Phone">
+                        <i class='bx bx-phone'></i>
+                    </a>
+                    
+                </div>
+                <p class="footer__copy">&#169; 2024 Dineshwaran S | Software Developer</p>
+            </footer>
+
+
+
+            
+
+
+
+          
+                  
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
